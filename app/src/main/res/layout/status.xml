@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    tools:context="android.parkskocjanskejame.NFCScan">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context="android.parkskocjanskejame.Status">
+
+    <android.parkskocjanskejame.utils.CustomTextView
+        android:id="@+id/statusText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="@string/status"
+        android:textColor="@color/textColor"
+        android:textSize="30dp" />
+
+    <android.parkskocjanskejame.utils.CustomTextView
+        android:id="@+id/statusText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/statusText3"
+        android:text="0"
+        android:textColor="@color/textColor"
+        android:textSize="30dp" />
+
+    <android.parkskocjanskejame.utils.CustomTextView
+        android:id="@+id/statusText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="/8"
+        android:textColor="@color/textColor"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/statusText1">
+
+        <ImageView
+            android:id="@+id/znacka1"
+            android:alpha="0.4"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/znacka1" />
+
+        <ImageView
+            android:id="@+id/znacka2"
+            android:alpha="0.4"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/znacka2" />
+
+        <ImageView
+            android:id="@+id/znacka3"
+            android:alpha="0.4"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/znacka3" />
+
+        <ImageView
+            android:id="@+id/znacka4"
+            android:alpha="0.4"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/znacka4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/linearlayout1">
+
+        <ImageView
+            android:id="@+id/znacka5"
+            android:alpha="0.4"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/znacka5" />
+
+        <ImageView
+            android:id="@+id/znacka6"
+            android:alpha="0.4"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/znacka6" />
+
+        <ImageView
+            android:id="@+id/znacka7"
+            android:alpha="0.4"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/znacka7" />
+
+        <ImageView
+            android:id="@+id/znacka8"
+            android:alpha="0.4"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/znacka8" />
+    </LinearLayout>
+
+    <android.parkskocjanskejame.utils.CustomTextView
+        android:id="@+id/statusText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout2"
+        android:gravity="center"
+        android:text="@string/nagrada"
+        android:textColor="@color/textColor"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"/>
+
+    <android.parkskocjanskejame.utils.CustomTextView
+        android:id="@+id/statusText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/statusText6"
+        android:layout_alignBottom="@+id/statusText6"
+        android:layout_toStartOf="@+id/statusText6"
+        android:text="0"
+        android:textColor="@color/textColor"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp" />
+
+    <android.parkskocjanskejame.utils.CustomTextView
+        android:id="@+id/statusText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearlayout3"
+        android:layout_alignParentEnd="true"
+        android:text="/4"
+        android:textColor="@color/textColor"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="0dp"
+        android:layout_below="@+id/statusText4">
+
+        <ImageView
+            android:id="@+id/znacka9"
+            android:alpha="0.4"
+            android:layout_margin="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/znacka9" />
+
+        <ImageView
+            android:id="@+id/znacka10"
+            android:alpha="0.4"
+            android:layout_margin="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/znacka10" />
+
+        <ImageView
+            android:id="@+id/znacka11"
+            android:alpha="0.4"
+            android:layout_margin="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/znacka11" />
+
+        <ImageView
+            android:id="@+id/znacka12"
+            android:alpha="0.4"
+            android:layout_margin="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/znacka12" />
+    </LinearLayout>
+
+    <android.parkskocjanskejame.utils.CustomTextView
+        android:id="@+id/statusText7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearlayout3"
+        android:gravity="center"
+        android:text="@string/status2"
+        android:textColor="@color/textColor"
+        android:textSize="28dp" />
+
+
+
+</RelativeLayout>
+    </ScrollView>
+    <ImageView
+        android:id="@+id/help"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/help" />
+</RelativeLayout>
+
